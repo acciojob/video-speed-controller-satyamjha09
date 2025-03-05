@@ -1,2 +1,52 @@
 
-/* Your CSS Code here. */
+body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #222;
+            color: white;
+            flex-direction: column;
+        }
+        .video-container {
+            position: relative;
+            width: 765px;
+        }
+        video {
+            width: 100%;
+            border-radius: 8px;
+        }
+        .controls {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #333;
+            padding: 10px;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .progress {
+            flex: 1;
+            height: 8px;
+            background: grey;
+            cursor: pointer;
+            margin: 0 10px;
+            border-radius: 5px;
+            position: relative;
+        }
+        .progress__filled {
+            height: 100%;
+            background: red;
+            width: 0%;
+            transition: width 0.2s;
+        }
+        button {
+            background: none;
+            border: none;
+            color: white;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        input {
+            width: 100px;
+        }
